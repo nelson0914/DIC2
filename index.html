@@ -18,6 +18,11 @@
   
   <!-- Embedded Model Data JS (Static Fallback for GitHub Pages & Local Flask) -->
   <script src="static/model_data.js"></script>
+  <script>
+    if (!window.MODEL_DATA) {
+      document.write('<script src="model_data.js"><\/script>');
+    }
+  </script>
 
   <style>
     :root {
